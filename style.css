@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+	font-family: 'Oswald', sans-serif;
+}
+
+:root{
+	--background-color: rgb(48, 48, 48);
+	--orange: rgb(232, 99, 28);
+	--font-color: rgb(255, 255, 255);
+}
+
+/* ====== MOBILE HAMBURGER STYLING SECTION START ====== */
+
+.container {
+	display: inline-block;
+	cursor: pointer;
+	display: none;
+}
+
+.bar {
+	width: 30px;
+	height: 2px;
+	background-color: #fff;
+	transition: 0.4s;
+}
+
+.line2{
+	margin: 6px 0;
+}
+
+.toggle .line1 {
+	transform: translate(0, 8px) rotate(-45deg); 
+}
+
+.toggle .line3 {
+	transform: translate(0, -8px) rotate(45deg);
+}
+
+.toggle .line2 {
+	transform: scale(-1.1);
+	opacity: 0;
+}
+
+/* ====== MOBILE HAMBURGER STYLING SECTION END ====== */
+
+
+.orange_color{
+	background-color: var(--orange);
+}
+
+.dark_color{
+	background-color: var(--background-color);
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	font-size: calc(10px + 1vw);
+	color: var(--font-color);
+	line-height: 1.2;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: lighter;
+}
+
+b{
+	font-size: calc(10px + 2vw);
+	color: var(--font-color);
+	text-transform: uppercase;
+}
+
+h2{
+	font-size: calc(30px + 1vw);
+	color: var(--font-color);
+	text-transform: uppercase;
+}
+
+button{
+	font-size: calc(10px + 1vw);
+	text-transform: uppercase;
+	border-radius: 3px;
+	color: var(--font-color);
+	border: none;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+.center_container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+body{
+	overflow-x: hidden;
+}
+
+.header{
+	width: 100vw;
+	height: 10rem;
+	align-items: center;
+}
+
+.dflex{
+	display: flex;
+}
+
+.header_container{
+	justify-content: space-between;
+	width: 90%;
+	margin: auto;
+	align-items: center;
+}
+
+/* .logo img{
+	width: 100%;
+} */
+
+.logo{
+	font-size: calc(10px + 1vw);
+	color: var(--font-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .3s ease-in-out;
+}
+
+.logo:hover{
+	cursor: pointer;
+	color: var(--orange);
+}
+
+.nav_list{
+	gap: 4rem;
+}
+
+.nav_link a{
+	color: var(--font-color);
+	font-size: calc(10px + 1vw);
+	text-transform: uppercase;
+	padding: .5rem 1.5rem;
+	border-radius: .5rem;
+	transition: .3s ease-in-out;
+}
+
+.nav_link a:hover{
+	background-color: var(--orange);
+}
+
+.nav_link a:visited {
+
+}
+
+.search_icon{
+	color: var(--font-color);
+	font-size: calc(15px + 1vw);
+	padding: 1rem;
+	border-radius: 50%;
+	transition: .3s ease-in-out;
+}
+
+.search_icon:hover{
+	cursor: pointer;
+	background-color: var(--orange);
+}
+
+.hero_section{
+	width: 100%;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero_section img{
+	width: 100%;
+	transition: .3s ease-in-out;
+}
+
+.title_main_div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.title_main{
+	font-size: calc(10px + 6vw);
+	font-weight: normal;
+	line-height: 1.2;
+	color: var(--font-color);
+}
+
+.register_btn{
+	padding: 2% 4%;
+}
+
+.register_btn:hover{
+	background-color: rgba(232, 99, 28, 0.8);
+}
+
+.dancer_tour_section{
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding: 2rem 0;
+}
+
+.dancer_tour_header_section, 
+.pricing_header_section{
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.dancer_tour_cards{
+	justify-content: space-between;
+}
+
+.dancer_card{
+	width: 30%;
+}
+
+.america_img, 
+.asia_img, 
+.australia_img{
+	position: relative;
+	bottom: -3px;
+	overflow: hidden;
+}
+
+
+.dancer_card img{
+	width: 100%;
+	height: auto;
+	transition: .3s ease-in-out;
+}
+
+.dancer_card img:hover{
+	transform: scale(1.2);
+}
+
+.america_card_info, 
+.asia_card_info, 
+.australia_card_info{
+	text-align: center;
+	padding: 3rem 1rem;
+}
+
+.pricing_section{
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding: 2rem 0;
+}
+
+.pricing_cards{
+	justify-content: space-between;
+}
+
+.price_card{
+	padding: 1rem;
+	width: 30%;
+	text-align: center;
+	padding: 5rem 2rem 2rem 2rem;
+	border-radius: 5px;
+}
+
+.badge_icon{
+	font-size: calc(10px + 6vw);
+	color: var(--font-color);
+}
+
+.pricing_btn{
+	padding: 1rem 0;
+	width: 100%;
+}
+
+.pricing_btn:hover{
+	background-color: rgb(60, 60, 60);
+}
+
+.amazing_dance_grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid_item img{
+	width: 100%;
+	height: auto;
+}
+
+.grid_item2, 
+.grid_item3{
+	justify-content: center;
+	align-items: center;
+}
+
+
+.grid_item2_sub, 
+.grid_item3_sub{
+	width: 70%;
+}
+
+.grid_item button{
+	padding: 1rem 3rem;
+}
+
+.grid_item button:hover{
+	background-color: rgb(60, 60, 60);
+}
+
+.static_div{
+	text-align: center;
+	padding: 15% 0;
+}
+
+.statics_num{
+	align-items: center;
+	justify-content: space-around;
+}
+
+.statics_num b{
+	position: relative;
+}
+
+.statics_num b::after{
+	display: inline-block;
+	font-size: calc(10px + 1vw);
+	font-weight: lighter;
+	font-family: 'Montserrat', sans-serif;
+	color: var(--font-color);
+	position: absolute;
+	bottom: -40px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.statics_num b:nth-child(1)::after{
+	content: "Club";
+}
+
+.statics_num b:nth-child(2)::after{
+	content: "Member";
+}
+
+.statics_num b:nth-child(3)::after{
+	content: "Community";
+}
+
+.section_three img{
+	width: 100%;
+}
+
+.section_three{
+	position: relative;
+	text-align: center;
+}
+
+.sec_three_content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.subscribe_section{
+	width: 100%;
+	padding: 15% 0;
+}
+
+.subscribe_div{
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.sub_field{
+	justify-content: center;
+}
+
+input[type="email"]{
+	width: 50%;
+	height: 50px;
+	padding: 0 1rem;
+}
+
+.subscribe_btn{
+	padding: 0 2rem;
+	height: 50px;
+}
+
+.subscribe_btn:hover{
+	background-color: rgb(60, 60, 60);
+}
+
+.footer_section{
+	width: 100%;
+}
+
+.footer_div{
+	justify-content: space-between;
+	padding: 4% 0;
+}
+
+.footer_left{
+	width: 50%;
+	padding-right: 2rem;
+}
+
+.footer_right{
+	justify-content: space-between;
+	width: 50%;
+	gap: 2rem;
+	padding-left: 2rem;
+}
+
+.footer_social_icon{
+	font-size: calc(10px + 2vw);
+	color: #fff;
+	margin-right: 1rem;
+	transition: .3s ease-in-out;
+}
+
+.footer_social_icon:hover{
+	cursor: pointer;
+	fill: var(--orange);
+	transform: rotate(5deg) scale(1.2);
+}
+
+.footer_list li a{
+	color: var(--font-color);
+	font-size: calc(10px + 1vw);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: lighter;
+	line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+	.nav_list{
+		gap: 1rem;
+	}
+
+	.logo{
+		width: 100px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	.header{
+		height: 6rem;
+	}
+
+	.nav_list{
+		flex-direction: column;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1;
+		background: #1b1b1b;
+		height: 100vh;
+		width: 100vw;
+		position: fixed;
+		justify-content: center;
+		align-items: center;
+		opacity: 90%;
+		gap: 3rem;
+		visibility: hidden;
+		transition: .3s ease-in-out;
+	}
+
+	.nav_link a{
+		font-size: 2rem;
+	}
+
+	.container{
+		display: block;
+		z-index: 1;
+	}
+
+	.active_menu2{
+		position: fixed;
+		right: 5%;
+	}
+
+	.menu_active{
+		visibility: visible;
+	}
+
+	.dancer_tour_cards, 
+	.pricing_cards{
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.dancer_card,
+	.price_card{
+		width: 100%;
+	}
+
+	.badge_icon{
+		font-size: calc(30px + 20vw);
+	}
+
+	.dancer_tour_header_section, 
+	.pricing_header_section{
+		width: 100%;
+	}
+
+	.dancer_tour_card_title, 
+	.pricing_card_title{
+		font-size: calc(20px + 1vw);
+	}
+
+	.amazing_dance_grid{
+		grid-template-columns: 1fr;
+	}
+
+	.grid_item2, 
+	.grid_item3{
+		padding: 10rem 0;
+	}
+
+	.grid_item2_sub, 
+	.grid_item3_sub{
+		text-align: center;
+	}
+
+	.grid_item3{
+		grid-row-start: 4;
+	}
+
+	.title_main_div,
+	.grid_item2_sub,
+	.grid_item3_sub,
+	.sec_three_content,
+	.subscribe_div{
+		width: 90%;
+	}
+
+	.footer_div,
+	.footer_right{
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+
+	.footer_div{
+		gap: 4rem;
+	}
+
+	.footer_left,
+	.footer_right{
+		width: 90%;
+		padding: 0;
+	}
+
+}
+
+
+
+
