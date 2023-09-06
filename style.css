@@ -162,10 +162,6 @@ body{
 	background-color: var(--orange);
 }
 
-.nav_link a:visited {
-
-}
-
 .search_icon{
 	color: var(--font-color);
 	font-size: calc(15px + 1vw);
@@ -484,7 +480,7 @@ input[type="email"]{
 	}
 
 	.nav_list{
-		flex-direction: column;
+		flex-direction: column !important;
 		position: absolute;
 		top: 0;
 		right: 0;
